@@ -15,11 +15,11 @@ import io
 
 ## Reading CSV files
 
-work_cuts_train = pd.read_csv('AdvWorksCusts.csv')
-month_spend = pd.read_csv('AW_AveMonthSpend.csv')
-bike_buyer = pd.read_csv('AW_BikeBuyer.csv')
-bike_buyer_predicted = pd.read_csv('BikeBuy_predicted.csv')
-work_cuts_test = pd.read_csv('AW_test.csv')
+work_cuts_train = pd.read_csv('Data/AdvWorksCusts.csv')
+month_spend = pd.read_csv('Data/AW_AveMonthSpend.csv')
+bike_buyer = pd.read_csv('Data/AW_BikeBuyer.csv')
+bike_buyer_predicted = pd.read_csv('Data/BikeBuy_predicted.csv')
+work_cuts_test = pd.read_csv('Data/AW_test.csv')
 
 bike_buyer_predicted.columns = ['bikebuyer_predicted']
 
