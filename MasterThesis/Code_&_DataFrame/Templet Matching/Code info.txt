@@ -1,0 +1,5 @@
+Two file for cropping images
+
+one for imager
+another for iPhone
+
