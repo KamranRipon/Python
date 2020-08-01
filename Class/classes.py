@@ -1,10 +1,28 @@
-class Point():
-    def __init__(self, input1, input2):
-        self.x = input1
-        self.y = input2
+class Flight():
+    def __init__(self, capacity):
+        self.capacity = capacity
+        self.passengers = []
+        
+    def add_passenger(self, name):
+        if not self.open_seats():
+            return False
+        self.passengers.append(name)
+        return True
+    
+    def open_seats(self):
+        return self.capacity - len(self.passengers)
         
 
-p = Point(8,2)
 
-#printing class objeckt
-print(p.x * p.y)
+flight = Flight(1)
+
+people = ["akash", "samad","korim","ron"]
+
+for person in people:
+    success = flight.add_passenger(person)
+    
+    if success:
+        print(f"Added {person} to flight suc")
+    else:
+        print("No Seat left for booking")
+        break
