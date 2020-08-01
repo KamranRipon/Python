@@ -6,4 +6,5 @@ class Point():
 
 p = Point(8,2)
 
-print(p.x + p.y)
+#printing class objeckt
+print(p.x * p.y)
