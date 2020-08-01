@@ -6,4 +6,4 @@ class Point():
 
 p = Point(8,2)
 
-print(p.x)
+print(p.x + p.y)
